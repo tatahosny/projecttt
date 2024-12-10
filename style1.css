@@ -1,0 +1,29 @@
+.product-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-details-container img {
+    max-width: 300px;
+    border-radius: 8px;
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+.product-details-container div {
+    max-width: 400px;
+    padding: 10px;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
